@@ -1,20 +1,16 @@
 package tehnosila.model;
 
-
-
 /**
  * Created by vench on 30.03.16.
- * Позиция
+ * Компания
  */
-public class Objective implements IHtmlViewer, IActiveModel {
-
-
-    public String title;
-
+public class Company implements IHtmlViewer,IActiveModel {
+    public String name;
+    public String url;
 
     @Override
     public String toHtml() {
-        return "<b><" + title + "/b>";
+        return null;
     }
 
     @Override
@@ -26,6 +22,4 @@ public class Objective implements IHtmlViewer, IActiveModel {
     public void delete(IActiveModelStore store) {
 
     }
-
-
 }
