@@ -6,12 +6,10 @@ import java.util.List;
 /**
  * Created by vench on 30.03.16.
  */
-public class Resume implements IHtmlViewer, IActiveModel {
+public class Resume extends Model {
 
     public String email;
-    public String name;
-    public String surname;
-    public String patronymic;
+    public String fullname;
     public String phone;
     public String address;
     public String about;
@@ -48,27 +46,6 @@ public class Resume implements IHtmlViewer, IActiveModel {
     public List<Qualifications> qualifications;
 
 
-    public String getFullName() {
-        return (name + " " + patronymic + " " + surname).trim();
-    }
 
 
-    @Override
-    public String toHtml() {
-        String html = "";
-        html += "<h1>" + getFullName() + "</h1>";
-
-
-        return html;
-    }
-
-    @Override
-    public void save(IActiveModelStore store) {
-
-    }
-
-    @Override
-    public void delete(IActiveModelStore store) {
-
-    }
 }
