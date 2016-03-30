@@ -3,24 +3,24 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="890.0" y="0.0">tehnosila.model.Model</node>
-    <node x="761.0" y="102.0">tehnosila.model.Resume</node>
-    <node x="1166.0" y="171.0">tehnosila.model.Institution</node>
-    <node x="1512.0" y="377.0">tehnosila.model.Achievement</node>
-    <node x="150.0" y="268.0">tehnosila.model.Education</node>
-    <node x="1676.0" y="202.0">tehnosila.model.Qualifications</node>
-    <node x="558.0" y="413.0">tehnosila.model.Link</node>
-    <node x="1308.0" y="476.0">tehnosila.model.Experience</node>
-    <node x="428.0" y="535.0">tehnosila.model.Company</node>
-    <node x="84.0" y="658.0">tehnosila.model.Objective</node>
+    <node x="449.5" y="-529.9999999999999">tehnosila.model.Model</node>
+    <node x="-166.0" y="-461.99999999999994">tehnosila.model.Resume</node>
+    <node x="-338.9999999999999" y="-501.9999999999999">tehnosila.model.Institution</node>
+    <node x="550.0000000000002" y="-435.9999999999998">tehnosila.model.Achievement</node>
+    <node x="-362.9999999999999" y="-38.0">tehnosila.model.Education</node>
+    <node x="184.5" y="-82.0">tehnosila.model.Qualifications</node>
+    <node x="600.9999999999999" y="12.0">tehnosila.model.Link</node>
+    <node x="-109.00000000000006" y="126.0">tehnosila.model.Experience</node>
+    <node x="278.9999999999999" y="197.9999999999999">tehnosila.model.Company</node>
+    <node x="694.9999999999999" y="-160.0">tehnosila.model.Contact</node>
+    <node x="440.4999999999999" y="86.0">tehnosila.model.Objective</node>
+    <node x="848.9999999999999" y="26.0">tehnosila.model.Phone</node>
   </nodes>
   <notes />
   <edges>
     <edge source="tehnosila.model.Achievement" target="tehnosila.model.Model">
-      <point x="0.0" y="-28.0" />
-      <point x="1649.5" y="62.0" />
-      <point x="955.0" y="62.0" />
-      <point x="25.999999999999986" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Education" target="tehnosila.model.Institution">
       <point x="0.0" y="0.0" />
@@ -31,28 +31,26 @@
       <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Institution" target="tehnosila.model.Model">
-      <point x="0.0" y="-28.0" />
-      <point x="1186.0" y="82.0" />
-      <point x="937.6666666666666" y="82.0" />
-      <point x="8.666666666666657" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Experience" target="tehnosila.model.Objective">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Qualifications" target="tehnosila.model.Model">
-      <point x="0.0" y="-52.0" />
-      <point x="1841.5" y="52.0" />
-      <point x="963.6666666666666" y="52.0" />
-      <point x="34.66666666666666" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Objective" target="tehnosila.model.Model">
-      <point x="0.0" y="-28.0" />
-      <point x="63.5" y="52.0" />
-      <point x="894.3333333333334" y="52.0" />
-      <point x="-34.666666666666664" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Resume" target="tehnosila.model.Education">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tehnosila.model.Phone" target="tehnosila.model.Contact">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
@@ -60,21 +58,21 @@
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
+    <edge source="tehnosila.model.Link" target="tehnosila.model.Contact">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
     <edge source="tehnosila.model.Resume" target="tehnosila.model.Model">
-      <point x="0.0" y="-148.0" />
-      <point x="-7.105427357601002E-15" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Education" target="tehnosila.model.Model">
-      <point x="0.0" y="-64.0" />
-      <point x="276.0" y="62.0" />
-      <point x="903.0" y="62.0" />
-      <point x="-26.0" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
-    <edge source="tehnosila.model.Link" target="tehnosila.model.Model">
-      <point x="0.0" y="-40.0" />
-      <point x="672.0" y="82.0" />
-      <point x="920.3333333333334" y="82.0" />
-      <point x="-8.666666666666671" y="16.0" />
+    <edge source="tehnosila.model.Contact" target="tehnosila.model.Model">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Resume" target="tehnosila.model.Experience">
       <point x="0.0" y="0.0" />
@@ -85,28 +83,30 @@
       <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Company" target="tehnosila.model.Model">
-      <point x="0.0" y="-40.0" />
-      <point x="504.0" y="72.0" />
-      <point x="911.6666666666666" y="72.0" />
-      <point x="-17.333333333333336" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Resume" target="tehnosila.model.Link">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Experience" target="tehnosila.model.Model">
-      <point x="0.0" y="-76.0" />
-      <point x="1408.0" y="72.0" />
-      <point x="946.3333333333334" y="72.0" />
-      <point x="17.33333333333332" y="16.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tehnosila.model.Resume" target="tehnosila.model.Phone">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="tehnosila.model.Resume" target="tehnosila.model.Objective">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="985.0" y="200.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="973.0" y="230.0" />
+  <SelectedNodes>
+    <node>tehnosila.model.Objective</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

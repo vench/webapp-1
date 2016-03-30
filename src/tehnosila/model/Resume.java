@@ -10,10 +10,14 @@ public class Resume extends Model {
 
     public String email;
     public String fullname;
-    public String phone;
     public String address;
     public String about;
 
+
+    /**
+     * Телефоны
+     */
+    public List<Phone> phones;
 
     /**
      * ССылки на соц сети и тп
