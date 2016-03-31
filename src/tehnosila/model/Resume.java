@@ -1,5 +1,7 @@
 package tehnosila.model;
 
+import tehnosila.model.section.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,48 +10,23 @@ import java.util.List;
  */
 public class Resume extends Model {
 
-    public String email;
     public String fullname;
     public String address;
     public String about;
 
 
     /**
-     * Телефоны
+     * Секции
      */
-    public List<Phone> phones;
+    public List<Section> sections;
 
-    /**
-     * ССылки на соц сети и тп
-     */
-    public List<Link> links;
-
-    /**
-     * Можем искать сразу несколько
-     */
-    public List<Objective> objectives;
-
-    /**
-     * Достижения
-     */
-    public List<Achievement> achievements;
-
-    /**
-     * Опыт работы
-     */
-    public List<Experience> experiences;
-
-    /**
-     * Образование
-     */
-    public List<Education> educations;
-
-    /**
-     * Квалификация
-     */
-    public List<Qualifications> qualifications;
-
-
-
-
+    public void init() {
+        sections = new ArrayList<>();
+        sections.add( new ContactSection());
+        sections.add( new ObjectiveSection());
+        sections.add( new AchievementSection());
+        sections.add( new ExperienceSection());
+        sections.add( new EducationSection());
+        sections.add( new QualificationsSection());
+    }
 }
