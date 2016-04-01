@@ -8,8 +8,8 @@ import java.util.Date;
  * Опыт работы
  */
 public class Experience  extends Model {
-    public Company company;
-    public String objective;
+    public String place;
+    public Contact address;
     public String description;
     public Date dateStart;
     public Date dateEnd;

@@ -3,137 +3,97 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="359.6883333333334" y="0.0">tehnosila.model.Model</node>
-    <node x="405.1933333333334" y="734.0">tehnosila.model.Resume</node>
-    <node x="461.5066666666668" y="449.0">tehnosila.model.section.Section</node>
-    <node x="629.125" y="92.5">tehnosila.model.Education</node>
-    <node x="71.875" y="401.0">tehnosila.model.Experience</node>
-    <node x="81.125" y="271.0">tehnosila.model.Company</node>
-    <node x="150.625" y="603.0">tehnosila.model.section.ExperienceSection</node>
-    <node x="587.625" y="603.0">tehnosila.model.section.EducationSection</node>
-    <node x="0.0" y="92.0">tehnosila.model.Contact</node>
-    <node x="387.625" y="603.0">tehnosila.model.section.RawTextSection</node>
+    <node x="176.85833333333335" y="0.0">tehnosila.model.Model</node>
+    <node x="5.153333333333336" y="594.0">tehnosila.model.Resume</node>
+    <node x="27.154999999999973" y="309.0">tehnosila.model.section.Section</node>
+    <node x="276.8366666666667" y="261.0">tehnosila.model.Experience</node>
+    <node x="222.58666666666667" y="463.0">tehnosila.model.section.ExperienceSection</node>
+    <node x="367.0866666666667" y="82.0">tehnosila.model.Contact</node>
+    <node x="23.586666666666673" y="463.0">tehnosila.model.section.RawTextSection</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="tehnosila.model.section.EducationSection" target="tehnosila.model.section.Section">
-      <point x="-52.0" y="-40.5" />
-      <point x="639.625" y="583.0" />
-      <point x="582.2566666666668" y="583.0" />
-      <point x="51.75" y="28.0" />
-    </edge>
-    <edge source="tehnosila.model.Resume" target="tehnosila.model.section.Section">
-      <point x="20.08333333333337" y="-76.5" />
-      <point x="545.7766666666668" y="714.0" />
-      <point x="577.125" y="714.0" />
-      <point x="577.125" y="583.0" />
-      <point x="547.7566666666668" y="583.0" />
-      <point x="17.25" y="28.0" />
-    </edge>
-    <edge source="tehnosila.model.section.ExperienceSection" target="tehnosila.model.section.Section">
-      <point x="54.25" y="-40.5" />
-      <point x="313.375" y="573.0" />
-      <point x="478.7566666666668" y="573.0" />
-      <point x="-51.75" y="28.0" />
-    </edge>
-    <edge source="tehnosila.model.Resume" target="tehnosila.model.section.RawTextSection">
-      <point x="-20.08333333333337" y="-76.5" />
-      <point x="505.61" y="714.0" />
-      <point x="477.125" y="714.0" />
-      <point x="0.0" y="40.5" />
-    </edge>
-    <edge source="tehnosila.model.Resume" target="tehnosila.model.section.ExperienceSection">
-      <point x="-60.25" y="-76.5" />
-      <point x="465.4433333333334" y="704.0" />
-      <point x="259.125" y="704.0" />
-      <point x="0.0" y="40.5" />
+    <edge source="tehnosila.model.Experience" target="tehnosila.model.Contact">
+      <point x="54.25" y="-76.0" />
+      <point x="439.5866666666667" y="236.0" />
+      <point x="412.8366666666667" y="236.0" />
+      <point x="-45.75" y="64.5" />
     </edge>
     <edge source="tehnosila.model.Resume" target="tehnosila.model.Model">
-      <point x="100.41666666666663" y="-76.5" />
-      <point x="626.11" y="714.0" />
-      <point x="868.625" y="714.0" />
-      <point x="868.625" y="52.0" />
-      <point x="431.1883333333334" y="52.0" />
-      <point x="32.5" y="16.0" />
-    </edge>
-    <edge source="tehnosila.model.Education" target="tehnosila.model.Model">
-      <point x="0.0" y="-64.0" />
-      <point x="743.625" y="62.0" />
-      <point x="418.1883333333334" y="62.0" />
-      <point x="19.5" y="16.0" />
-    </edge>
-    <edge source="tehnosila.model.Company" target="tehnosila.model.Contact">
-      <point x="-39.5" y="-40.0" />
-      <point x="120.625" y="246.0" />
-      <point x="137.25" y="246.0" />
-      <point x="45.75" y="64.5" />
-    </edge>
-    <edge source="tehnosila.model.section.EducationSection" target="tehnosila.model.Education">
-      <point x="51.99999999999997" y="-40.5" />
-      <point x="0.0" y="64.0" />
+      <point x="-96.39999999999998" y="-76.5" />
+      <point x="29.25333333333336" y="574.0" />
+      <point x="0.0" y="574.0" />
+      <point x="0.0" y="52.0" />
+      <point x="186.60833333333335" y="52.0" />
+      <point x="-29.25" y="16.0" />
     </edge>
     <edge source="tehnosila.model.Contact" target="tehnosila.model.Model">
       <point x="0.0" y="-64.5" />
-      <point x="91.5" y="52.0" />
-      <point x="366.1883333333334" y="52.0" />
-      <point x="-32.5" y="16.0" />
+      <point x="458.5866666666667" y="52.0" />
+      <point x="245.10833333333335" y="52.0" />
+      <point x="29.25" y="16.0" />
     </edge>
     <edge source="tehnosila.model.section.RawTextSection" target="tehnosila.model.section.Section">
-      <point x="-5.6843418860808015E-14" y="-40.5" />
-      <point x="477.125" y="583.0" />
-      <point x="513.2566666666668" y="583.0" />
-      <point x="-17.25" y="28.0" />
+      <point x="0.0" y="-40.5" />
+      <point x="113.08666666666667" y="438.0" />
+      <point x="96.15499999999997" y="438.0" />
+      <point x="0.0" y="28.0" />
     </edge>
-    <edge source="tehnosila.model.Resume" target="tehnosila.model.section.EducationSection">
-      <point x="60.25" y="-76.5" />
-      <point x="585.9433333333334" y="704.0" />
-      <point x="691.625" y="704.0" />
-      <point x="0.0" y="40.5" />
+    <edge source="tehnosila.model.Resume" target="tehnosila.model.section.Section">
+      <point x="-48.200000000000045" y="-76.5" />
+      <point x="77.45333333333329" y="564.0" />
+      <point x="13.086666666666673" y="564.0" />
+      <point x="13.086666666666673" y="438.0" />
+      <point x="50.15499999999997" y="438.0" />
+      <point x="-46.0" y="28.0" />
+    </edge>
+    <edge source="tehnosila.model.section.ExperienceSection" target="tehnosila.model.section.Section">
+      <point x="-54.25" y="-40.5" />
+      <point x="276.8366666666667" y="438.0" />
+      <point x="142.15499999999997" y="438.0" />
+      <point x="46.0" y="28.0" />
     </edge>
     <edge source="tehnosila.model.section.ExperienceSection" target="tehnosila.model.Experience">
-      <point x="-54.25" y="-40.5" />
+      <point x="54.25" y="-40.5" />
       <point x="0.0" y="76.0" />
-    </edge>
-    <edge source="tehnosila.model.Experience" target="tehnosila.model.Company">
-      <point x="-66.5" y="-76.0" />
-      <point x="138.375" y="376.0" />
-      <point x="160.125" y="376.0" />
-      <point x="0.0" y="40.0" />
-    </edge>
-    <edge source="tehnosila.model.Company" target="tehnosila.model.Model">
-      <point x="39.5" y="-40.0" />
-      <point x="199.625" y="62.0" />
-      <point x="379.1883333333334" y="62.0" />
-      <point x="-19.5" y="16.0" />
     </edge>
     <edge source="tehnosila.model.section.Section" target="tehnosila.model.Model">
       <point x="0.0" y="-28.0" />
-      <point x="530.5066666666668" y="72.0" />
-      <point x="405.1883333333334" y="72.0" />
-      <point x="6.5" y="16.0" />
+      <point x="96.15499999999999" y="62.0" />
+      <point x="206.10833333333335" y="62.0" />
+      <point x="-9.75" y="16.0" />
     </edge>
     <edge source="tehnosila.model.Resume" target="tehnosila.model.Contact">
-      <point x="-100.41666666666663" y="-76.5" />
-      <point x="425.27666666666676" y="714.0" />
-      <point x="45.75" y="714.0" />
-      <point x="-45.75" y="64.5" />
+      <point x="96.39999999999998" y="-76.5" />
+      <point x="222.0533333333333" y="574.0" />
+      <point x="504.3366666666667" y="574.0" />
+      <point x="45.75000000000003" y="64.5" />
     </edge>
     <edge source="tehnosila.model.Experience" target="tehnosila.model.Model">
-      <point x="66.5" y="-76.0" />
-      <point x="271.375" y="376.0" />
-      <point x="249.62500000000003" y="376.0" />
-      <point x="249.62500000000003" y="72.0" />
-      <point x="392.1883333333334" y="72.0" />
-      <point x="-6.5" y="16.0" />
+      <point x="-54.25" y="-76.0" />
+      <point x="331.0866666666667" y="62.0" />
+      <point x="225.60833333333335" y="62.0" />
+      <point x="9.75" y="16.0" />
+    </edge>
+    <edge source="tehnosila.model.Resume" target="tehnosila.model.section.ExperienceSection">
+      <point x="48.200000000000045" y="-76.5" />
+      <point x="173.85333333333338" y="564.0" />
+      <point x="331.0866666666667" y="564.0" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="tehnosila.model.Resume" target="tehnosila.model.section.RawTextSection">
+      <point x="0.0" y="-76.5" />
+      <point x="125.65333333333334" y="574.0" />
+      <point x="113.08666666666667" y="574.0" />
+      <point x="0.0" y="40.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8" x="765.0" y="494.75" />
+  <settings layout="Hierarchic Group" zoom="0.8" x="850.0" y="513.75" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
     <Category>Methods</Category>
-    <Category>Properties</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

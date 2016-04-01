@@ -28,8 +28,8 @@ public class Resume extends Model {
         sections.add( new RawTextSection("Позиции"));
         sections.add( new RawTextSection("Достижения"));
         sections.add( new RawTextSection("Квалификация"));
-        sections.add( new ExperienceSection());
-        sections.add( new EducationSection());
+        sections.add( new ExperienceSection("Образование"));
+        sections.add( new ExperienceSection("Опты работы"));
 
     }
 

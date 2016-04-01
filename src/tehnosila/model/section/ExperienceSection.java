@@ -12,7 +12,9 @@ public class ExperienceSection extends Section {
 
     public List<Experience> list;
 
-    public ExperienceSection() {
-        name = "Опыт работы";
+    public ExperienceSection(String name ) {
+
+        this.name = name;
+
     }
 }
