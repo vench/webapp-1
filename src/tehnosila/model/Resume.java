@@ -11,7 +11,6 @@ import java.util.List;
 public class Resume extends Model {
 
     public String fullname;
-    public String address;
     public String about;
 
     public List<Contact> contacts;
@@ -26,7 +25,7 @@ public class Resume extends Model {
         contacts = new ArrayList<>();
 
         sections = new ArrayList<>();
-        sections.add( new ObjectiveSection());
+        sections.add( new RawTextSection("Позиции"));
         sections.add( new RawTextSection("Достижения"));
         sections.add( new RawTextSection("Квалификация"));
         sections.add( new ExperienceSection());

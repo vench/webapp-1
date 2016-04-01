@@ -20,7 +20,7 @@ public class Main {
         Resume r = new Resume();
         r.init();
         r.fullname = "Кислин Григорий";
-        r.address = "Проживание: Россия, г. Санкт-Петербург";
+
         r.about = "аналитический склад ума, сильная логика, креативность, инициативность.\n" +
                 "Пурист кода и архитектуры. ";
         r.contacts.add(new Contact( Contact.Type.PHONE, "+7 (921) 855 0482" ));
@@ -32,9 +32,9 @@ public class Main {
 
         println(r.fullname);
 
-        println(r.address);
+
         for(Contact c : r.contacts) {
-            print(c.type + ": " + c.source);
+            print(c.type + ": " + c.value);
         }
 
 

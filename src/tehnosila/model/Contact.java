@@ -12,17 +12,18 @@ public  class Contact extends Model {
         SKYPE,
         HABARHABR,
         STACK_OVERFLOW,
-        GITHUB
+        GITHUB,
+        TEXT
     };
 
     public Contact.Type type;
-    public String source;
+    public String value;
 
 
     public Contact() {}
 
-    public Contact(Contact.Type type, String source) {
+    public Contact(Contact.Type type, String value) {
         this.type = type;
-        this.source = source;
+        this.value = value;
     }
 }

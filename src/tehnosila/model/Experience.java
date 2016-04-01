@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class Experience  extends Model {
     public Company company;
-    public Objective objective;
+    public String objective;
     public String description;
     public Date dateStart;
     public Date dateEnd;

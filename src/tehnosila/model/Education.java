@@ -8,7 +8,7 @@ import java.util.Date;
  */
 public class Education extends Model {
 
-    public Institution institution;
+    public String institution;
     public Date dateStart;
     public Date dateEnd;
     public String description;
