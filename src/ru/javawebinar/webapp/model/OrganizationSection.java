@@ -7,9 +7,11 @@ import java.util.List;
  * 01.04.2016
  */
 public class OrganizationSection extends Section {
-    public OrganizationSection(List<Organization> organizations) {
-        this.organizations = organizations;
-    }
 
     private List<Organization> organizations;
+
+    public OrganizationSection(List<Organization> organizations) {
+        super("OrganizationSection");
+        this.organizations = organizations;
+    }
 }
