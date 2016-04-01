@@ -7,5 +7,9 @@ import java.util.List;
  * 01.04.2016
  */
 public class OrganizationSection extends Section {
+    public OrganizationSection(List<Organization> organizations) {
+        this.organizations = organizations;
+    }
+
     private List<Organization> organizations;
 }
