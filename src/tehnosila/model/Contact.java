@@ -5,12 +5,24 @@ package tehnosila.model;
  */
 public  class Contact extends Model {
 
-    public enum types {
+    public enum Type {
+        URL,
         EMAIL,
         PHONE,
-        SKYPE
+        SKYPE,
+        HABARHABR,
+        STACK_OVERFLOW,
+        GITHUB
     };
 
-    public String type;
+    public Contact.Type type;
     public String source;
+
+
+    public Contact() {}
+
+    public Contact(Contact.Type type, String source) {
+        this.type = type;
+        this.source = source;
+    }
 }

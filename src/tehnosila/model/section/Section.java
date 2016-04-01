@@ -9,8 +9,5 @@ import java.util.List;
  */
 public abstract class Section  extends Model {
     public String name;
-    public List<Model> list;
-
-
 
 }
