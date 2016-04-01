@@ -25,6 +25,8 @@
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27115">Объявление классов</a>
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27117">Преобразование типов</a>.
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27119">Объектная модель в Java</a>
+  - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27115?page=1#sect2">Модификаторы доступа</a>
+  - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27113?page=2#sect6">Пакеты</a>
 
   - Доп. литература
       - <a href="http://habrahabr.ru/post/134102/">Размер Java объектов</a>
@@ -33,8 +35,6 @@
       - <a href="http://habrahabr.ru/post/169883/">SoftReference, WeakReference, PhantomReference</a>
 
 ### Домашнее задание-2
-   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27115?page=1#sect2">Модификаторы доступа</a>
-   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27113?page=2#sect6">Пакеты</a>
 
-    Просмотреть на синтаксис перечисляемых типов <a href="http://easy-code.ru/lesson/enum-types-java">Enum</a>
-    Добавить enum и Map в нашу модель.
+      Просмотреть на синтаксис перечисляемых типов <a href="http://easy-code.ru/lesson/enum-types-java">Enum</a>
+      Добавить enum и Map в нашу модель.
