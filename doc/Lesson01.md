@@ -63,6 +63,8 @@ Resume - главный класс. В него все включается (к�
   - Учесть, что на одной работе (в одном учебном заведении)
 можно работать/ учиться в разные периоды и при этом имя организации не дублируется.
 
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFS09TQ3dENHh3ZEE">Разъяеснения по модели резюме</a>
+
 #### Инструменты для рисования:
 
 - <a href="http://stackoverflow.com/questions/8942751/use-intellij-to-generate-class-diagram#26926334">Generate class diagram in IntelliJ IDEA</a> (<a href="https://www.jetbrains.com/help/idea/2016.1/working-with-diagrams.html?origin=old_help">Help: working with Diagrams</a>)
