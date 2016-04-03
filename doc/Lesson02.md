@@ -30,7 +30,7 @@
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27117">Преобразование типов</a>.
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27119?page=1">Статические элементы, final</a>
 
-### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFXzR6MGcwVDV4Q0E">Домашнее задание HW02</a>
+### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png)  ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFXzR6MGcwVDV4Q0E">Домашнее задание HW02</a>
   - <a href="http://citforum.ru/programming/oop_rsis/glava2_1_10.shtml">Множественное наследование: агрегация + делегирование</a>
   - Дополнить модель конструкторами и сделать объект- инстанс резюме (листы делать как Arrays.asList(..)).
   - Достать и распечатаь из резюме email и Objective.
