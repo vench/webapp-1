@@ -32,7 +32,6 @@
 
 ### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFXzR6MGcwVDV4Q0E">Домашнее задание HW02</a>
   - <a href="http://citforum.ru/programming/oop_rsis/glava2_1_10.shtml">Множественное наследование: агрегация + делегирование</a>
-
   - Дополнить модель конструкторами и сделать объект- инстанс резюме (листы делать как Arrays.asList(..)).
   - Достать и распечатаь из резюме email и Objective.
   - Просмотреть на синтаксис <a href="http://easy-code.ru/lesson/enum-types-java">перечисляемых типов Enum</a>
