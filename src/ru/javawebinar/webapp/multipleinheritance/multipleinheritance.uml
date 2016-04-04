@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.javawebinar.webapp.multipleinheritance</OriginalElement>
+  <nodes>
+    <node x="230.76507936507937" y="82.0">ru.javawebinar.webapp.multipleinheritance.WaterTransport</node>
+    <node x="110.90158730158728" y="164.0">ru.javawebinar.webapp.multipleinheritance.Car</node>
+    <node x="71.40158730158728" y="82.0">ru.javawebinar.webapp.multipleinheritance.LandTransport</node>
+    <node x="0.0" y="0.0">ru.javawebinar.webapp.multipleinheritance.ILandTransport</node>
+    <node x="271.7650793650794" y="164.0">ru.javawebinar.webapp.multipleinheritance.Ship</node>
+    <node x="186.58333333333331" y="386.0">ru.javawebinar.webapp.multipleinheritance.Main</node>
+    <node x="169.58333333333331" y="0.0">ru.javawebinar.webapp.multipleinheritance.Transport</node>
+    <node x="158.08333333333331" y="256.0">ru.javawebinar.webapp.multipleinheritance.Amphibian</node>
+    <node x="303.16666666666663" y="0.0">ru.javawebinar.webapp.multipleinheritance.IWaterTransport</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.WaterTransport" target="ru.javawebinar.webapp.multipleinheritance.Transport">
+      <point x="-36.25" y="-16.0" />
+      <point x="267.0150793650794" y="57.0" />
+      <point x="255.41666666666666" y="57.0" />
+      <point x="34.33333333333334" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Amphibian" target="ru.javawebinar.webapp.multipleinheritance.Car">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.LandTransport" target="ru.javawebinar.webapp.multipleinheritance.Transport">
+      <point x="34.25" y="-16.0" />
+      <point x="174.15158730158728" y="57.0" />
+      <point x="186.74999999999997" y="57.0" />
+      <point x="-34.33333333333334" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Car" target="ru.javawebinar.webapp.multipleinheritance.LandTransport">
+      <point x="0.0" y="-16.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Amphibian" target="ru.javawebinar.webapp.multipleinheritance.ILandTransport">
+      <point x="-53.14285714285711" y="-40.0" />
+      <point x="166.9404761904762" y="236.0" />
+      <point x="49.22063492063489" y="236.0" />
+      <point x="49.22063492063489" y="57.0" />
+      <point x="35.0" y="57.0" />
+      <point x="-35.0" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Amphibian" target="ru.javawebinar.webapp.multipleinheritance.Ship">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.LandTransport" target="ru.javawebinar.webapp.multipleinheritance.ILandTransport">
+      <point x="-34.25" y="-16.0" />
+      <point x="35.0" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.WaterTransport" target="ru.javawebinar.webapp.multipleinheritance.IWaterTransport">
+      <point x="36.25" y="-16.0" />
+      <point x="-37.0" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Amphibian" target="ru.javawebinar.webapp.multipleinheritance.Transport">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Ship" target="ru.javawebinar.webapp.multipleinheritance.WaterTransport">
+      <point x="0.0" y="-16.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Amphibian" target="ru.javawebinar.webapp.multipleinheritance.IWaterTransport">
+      <point x="53.14285714285717" y="-40.0" />
+      <point x="273.2261904761905" y="236.0" />
+      <point x="398.94603174603174" y="236.0" />
+      <point x="398.94603174603174" y="57.0" />
+      <point x="414.16666666666663" y="57.0" />
+      <point x="37.0" y="16.0" />
+    </edge>
+    <edge source="ru.javawebinar.webapp.multipleinheritance.Main" target="ru.javawebinar.webapp.multipleinheritance.Amphibian">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="216.0" y="177.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

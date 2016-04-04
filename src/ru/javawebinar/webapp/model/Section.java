@@ -5,9 +5,22 @@ package ru.javawebinar.webapp.model;
  * 01.04.2016
  */
 public abstract class Section {
-    private String type;
 
-    protected Section(String type) {
+
+    public enum Type {
+        Objective,
+        Organization
+    }
+
+    private Section.Type type;
+
+    protected Section(Section.Type type) {
         this.type = type;
     }
+
+
+    public Type getType() {
+        return type;
+    }
+
 }
