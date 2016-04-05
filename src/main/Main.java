@@ -1,8 +1,6 @@
 package main;
 
 import ru.javawebinar.webapp.model.Link;
-import ru.javawebinar.webapp.storage.MapStorageImpl;
-import ru.javawebinar.webapp.storage.Storage;
 
 /**
  * User: gkislin
@@ -21,7 +19,5 @@ public class Main {
         System.out.println(link.toString());
         System.out.println(link.getName());
 
-        Storage storage = new MapStorageImpl();
-        storage.getClass();
     }
 }

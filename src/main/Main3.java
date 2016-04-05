@@ -1,6 +1,6 @@
 package main;
 
-import ru.javawebinar.webapp.model.*;
+import ru.javawebinar.webapp.model.ContactType;
 
 /**
  * GKislin
@@ -16,16 +16,7 @@ public class Main3 {
 
         Enum ct = Enum.valueOf(enumClass, name);
         System.out.println(ct == contactType2);
-        System.out.printf("" + contactType);
-
-        Resume r1 = new Resume("Полное Имя1", "About1");
-        r1.addContact(ContactType.MAIL, "mail1@ya.ru");
-        r1.addContact(ContactType.PHONE, "11111");
-        r1.addSection(new TextSection(SectionType.OBJECTIVE, "Objective1"));
-        r1.addSection(new ListSection(SectionType.ACHIEVEMENT, "Achivment11", "Achivment12", "Achivment12"));
-        r1.addSection(new ListSection(SectionType.QUALIFICATIONS, "Java", "SQL"));
-
-        System.out.println(r1.toString());
+        System.out.printf("%d is %s\n", 12, "12");
 
         char ch2 = 'A';
         System.out.println(ch2);
@@ -35,8 +26,9 @@ public class Main3 {
         System.out.println(s.charAt(5));
         System.out.println(s.substring(2, 5));
 
-        String s2 = new String("Hello " + "WebApp");
+        String s2 = (new String("Hello ")+ "WebApp").intern();
         System.out.println(s == s2);
+
         System.out.println();
         System.out.println(new Integer(12) == 12);
         System.out.println(Integer.valueOf(12) == 12);
