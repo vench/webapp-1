@@ -16,6 +16,6 @@ public class MainArrayStorage {
         r1.addSection(new ListSection(SectionType.ACHIEVEMENT, "Achivment11", "Achivment12", "Achivment12"));
         r1.addSection(new ListSection(SectionType.QUALIFICATIONS, "Java", "SQL"));
 
-        // TODO test ArrayStorage
+        // TODO test ArrayStorageImpl
     }
 }

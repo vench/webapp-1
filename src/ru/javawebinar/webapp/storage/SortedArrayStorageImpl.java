@@ -8,12 +8,9 @@ import java.util.Collection;
  * GKislin
  * 05.04.2016
  */
-// TODO implement
-public class ArrayStorage implements Storage {
-    private static final int ARRAY_LIMIT = 1000;
 
-    private Resume[] array = new Resume[ARRAY_LIMIT];
-
+// TODO implements Optional
+public class SortedArrayStorageImpl implements Storage{
     @Override
     public void clear() {
 

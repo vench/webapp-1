@@ -14,16 +14,16 @@
   -  <a href="https://ru.wikipedia.org/wiki/Data_Access_Object">Data Access Object</a>. Интерфейс для хранения резюме.
 
 ### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW03
-  - Добавить в резюме OrganizationSection (в MainArrayStorage)
-  - Реализовать IStorage на основе массива (ArrayStorage в проекте)
-  - Сделать несколько вызовов ArrayStorage из MainArrayStorage
+  - Добавить в резюме `OrganizationSection` (в `MainArrayStorage`)
+  - Реализовать `Storage` на основе массива (`ArrayStorageImpl` в проекте)
+  - Сделать несколько вызовов `Storage` из `MainArrayStorage`
 
 ### Optional: оценить <a href="https://drive.google.com/file/d/0B9Ye2auQ_NsFNEJWRFJkVDA3TkU">Time complexity</a> реализации.
-  - Сделать реализацию SortedArrayStorage с time complexity: O(log N)
+  - Сделать реализацию `SortedArrayStorageImpl` с time complexity: O(log N)
     -  <a href="https://drive.google.com/file/d/0B9Ye2auQ_NsFNEJWRFJkVDA3TkU/view">Time complexity</a>
     -  <a href="https://ru.wikipedia.org/wiki/Временная_сложность_алгоритма">Временная сложность алгоритма</a>
     -  <a href="https://ru.wikipedia.org/wiki/Вычислительная_сложность">Вычислительная сложность</a>
 
-  - Попробовать выделить общую часть ArrayStorage и SortedArrayStorage в AbstractArrayStorage
+  - Попробовать выделить общую часть `ArrayStorageImpl` и `SortedArrayStorageImpl` в `AbstractArrayStorageImpl`
     - <a href="https://ru.wikipedia.org/wiki/Шаблонный_метод_(шаблон_проектирования)">Шаблонный метод (шаблон проектирования)</a>
     - <a href="http://pro-prof.com/archives/1108">Паттерн шаблонный метод (template method)</a>
