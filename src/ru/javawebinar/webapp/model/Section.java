@@ -5,5 +5,9 @@ package ru.javawebinar.webapp.model;
  * 01.04.2016
  */
 public abstract class Section {
-    private String type;
+    private final SectionType type;
+
+    public Section(SectionType type) {
+        this.type = type;
+    }
 }

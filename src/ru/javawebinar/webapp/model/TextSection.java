@@ -7,7 +7,8 @@ package ru.javawebinar.webapp.model;
 public class TextSection extends Section {
     private String content;
 
-    protected TextSection(String content) {
+    public TextSection(SectionType type, String content) {
+        super(type);
         this.content = content;
     }
 }

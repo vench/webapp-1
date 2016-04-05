@@ -1,7 +1,6 @@
 package main;
 
-import ru.javawebinar.webapp.model.ContactType;
-import ru.javawebinar.webapp.model.Resume;
+import ru.javawebinar.webapp.model.*;
 
 /**
  * GKislin
@@ -9,7 +8,6 @@ import ru.javawebinar.webapp.model.Resume;
  */
 public class Main3 {
     public static void main(String[] args) {
-        Resume r1 = new Resume("Полное Имя1", "About1");
         ContactType contactType = ContactType.HOME_PAGE;
 
         String name = contactType.name();
@@ -19,5 +17,12 @@ public class Main3 {
         Enum ct = Enum.valueOf(enumClass, name);
         System.out.println(ct == contactType2);
         System.out.printf("" + contactType);
+
+        Resume r1 = new Resume("Полное Имя1", "About1");
+        r1.addContact(ContactType.MAIL, "mail1@ya.ru");
+        r1.addContact(ContactType.PHONE, "11111");
+        r1.addSection(new TextSection(SectionType.OBJECTIVE, "Objective1"));
+        r1.addSection(new ListSection(SectionType.ACHIEVEMENT, "Achivment11", "Achivment12", "Achivment12"));
+        r1.addSection(new ListSection(SectionType.QUALIFICATIONS, "Java", "SQL"));
     }
 }
