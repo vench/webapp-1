@@ -1,6 +1,9 @@
 package main;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 import ru.javawebinar.webapp.model.*;
 
 /**
@@ -15,6 +18,7 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        //init Resume
         Resume r = new Resume();
         r.setAbout("Информация о себе!!!");
         r.setFullName("Иванов Иван Иванович");
@@ -23,27 +27,17 @@ public class Main {
                 new Contact(Contact.Type.PHONE, "8-812-654-1212"),
                 new Contact(Contact.Type.SKYPE, "ben66542")
         ));
-        r.setSections(Arrays.asList(
-                (Section) (new OrganizationSection(
-                        Arrays.asList(
-                                new Organization(),
-                                new Organization()
-                        )
-                )),
-                (Section) (new ListSection(Section.Type.Objective,
-                        Arrays.asList(
-                                "PHP", "Java", "Css", "C++"
-                        )
-                ))
-        ));
 
-
-
+        Map<SectionType, Section> sections = SectionType.instanceAll();
+        TextSection o = (TextSection)sections.get(SectionType.OBJECTIVE);
+        o.setContent("PHP, HTML, JAVA, MAVEN & etc");
+        r.setSections(sections);
+        //end init Resume
 
         Contact c = r.getContactByType(Contact.Type.EMAIL);
         System.out.println(c);
 
-        ListSection o = (ListSection)r.getSectionByType(Section.Type.Objective);
+        o = (TextSection)r.getSectionByType(SectionType.OBJECTIVE);
         System.out.println(o);
     }
 }

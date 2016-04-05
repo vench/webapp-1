@@ -10,8 +10,12 @@ public class OrganizationSection extends Section {
 
     private List<Organization> organizations;
 
+    public OrganizationSection() {
+        super("OrganizationSection");
+    }
+
     public OrganizationSection(List<Organization> organizations) {
-        super(Type.Organization);
+        this();
         this.organizations = organizations;
     }
 }

@@ -7,19 +7,15 @@ package ru.javawebinar.webapp.model;
 public abstract class Section {
 
 
-    public enum Type {
-        Objective,
-        Organization
-    }
 
-    private Section.Type type;
+    private String type;
 
-    protected Section(Section.Type type) {
+    protected Section(String type) {
         this.type = type;
     }
 
 
-    public Type getType() {
+    public String getType() {
         return type;
     }
 

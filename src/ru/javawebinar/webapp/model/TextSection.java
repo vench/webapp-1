@@ -7,12 +7,21 @@ package ru.javawebinar.webapp.model;
 public class TextSection extends Section {
     private String content;
 
-    public TextSection(Section.Type type,  String content) {
-        super(type);
+    public TextSection(String content) {
+        super("TextSection");
         this.content = content;
     }
 
     public String getContent() {
         return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "TextSection(content: " + content+")";
     }
 }

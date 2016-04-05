@@ -14,7 +14,7 @@ public class Resume {
     private String fullName;
     private String about;
     private List<Contact> contacts;
-    private List<Section> sections;
+    private Map<SectionType, Section> sections;
 
 
     public Resume() {
@@ -55,20 +55,15 @@ public class Resume {
         this.contacts = contacts;
     }
 
-    public List<Section> getSections() {
+    public Map<SectionType, Section>  getSections() {
         return sections;
     }
 
-    public void setSections(List<Section> sections) {
+    public void setSections(Map<SectionType, Section> sections) {
         this.sections = sections;
     }
 
-    public Section getSectionByType(Section.Type type) {
-        for(Section s : sections) {
-            if(s.getType().equals(type)) {
-                return s;
-            }
-        }
-        return  null;
+    public Section getSectionByType(SectionType type) {
+        return  sections.containsKey(type) ? sections.get(type) : null;
     }
 }

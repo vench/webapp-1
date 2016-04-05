@@ -9,14 +9,19 @@ import java.util.List;
 public class ListSection extends Section {
     private List<String> lines;
 
-    public ListSection(Section.Type type) {
-        super(type);
+    public ListSection() {
+        super("ListSection");
     }
 
-    public ListSection(Section.Type type, List<String> lines) {
-        super(type);
+    public ListSection( List<String> lines) {
+        this();
         this.lines = lines;
     }
+
+    public void setLines( List<String> lines) {
+        this.lines = lines;
+    }
+
 
     @Override
     public String toString() {
