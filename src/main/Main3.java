@@ -24,5 +24,7 @@ public class Main3 {
         r1.addSection(new TextSection(SectionType.OBJECTIVE, "Objective1"));
         r1.addSection(new ListSection(SectionType.ACHIEVEMENT, "Achivment11", "Achivment12", "Achivment12"));
         r1.addSection(new ListSection(SectionType.QUALIFICATIONS, "Java", "SQL"));
+
+        System.out.println(r1.toString());
     }
 }

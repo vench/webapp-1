@@ -11,4 +11,9 @@ public class TextSection extends Section {
         super(type);
         this.content = content;
     }
+
+    @Override
+    public String toString() {
+        return "TextSection(" + content + ')';
+    }
 }

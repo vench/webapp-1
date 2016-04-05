@@ -25,4 +25,13 @@ public class Resume {
     public void addSection(Section section) {
         sections.add(section);
     }
+
+    @Override
+    public String toString() {
+        return "Resume{" +
+                "fullName='" + fullName + '\'' + ", about='" + about + "\n," +
+                "contacts=" + contacts + "\n," +
+                "sections=" + sections +
+                '}';
+    }
 }
