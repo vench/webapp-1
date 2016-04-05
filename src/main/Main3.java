@@ -26,5 +26,17 @@ public class Main3 {
         r1.addSection(new ListSection(SectionType.QUALIFICATIONS, "Java", "SQL"));
 
         System.out.println(r1.toString());
+
+        char ch2 = 'A';
+        System.out.println(ch2);
+
+
+        String s = "Hello WebApp";
+        System.out.println(s.charAt(5));
+        System.out.println(s.substring(2, 5));
+
+        String s2 = new String("Hello " + "WebApp");
+        System.out.println(s == s2);
+
     }
 }
