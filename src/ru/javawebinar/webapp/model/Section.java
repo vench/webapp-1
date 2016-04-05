@@ -6,8 +6,4 @@ package ru.javawebinar.webapp.model;
  */
 public abstract class Section {
     private String type;
-
-    protected Section(String type) {
-        this.type = type;
-    }
 }

@@ -11,7 +11,6 @@ public class OrganizationSection extends Section {
     private List<Organization> organizations;
 
     public OrganizationSection(List<Organization> organizations) {
-        super("OrganizationSection");
         this.organizations = organizations;
     }
 }

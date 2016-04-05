@@ -8,7 +8,6 @@ public class TextSection extends Section {
     private String content;
 
     protected TextSection(String content) {
-        super("TextSection");
         this.content = content;
     }
 }
