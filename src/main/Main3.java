@@ -37,6 +37,16 @@ public class Main3 {
 
         String s2 = new String("Hello " + "WebApp");
         System.out.println(s == s2);
+        System.out.println();
+        System.out.println(new Integer(12) == 12);
+        System.out.println(Integer.valueOf(12) == 12);
+        System.out.println(12 == Integer.valueOf(12));
+        System.out.println(Integer.valueOf(300) == Integer.valueOf(300));
 
+        StringBuilder sb = new StringBuilder(s);
+        for (int i = 0; i < 10; i++) {
+            sb.append(i);
+        }
+        System.out.println(sb.toString());
     }
 }
