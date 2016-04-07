@@ -11,13 +11,13 @@ import java.util.Collection;
 public interface Storage {
     void clear();
 
-    void save(Resume r);
+    void save(Resume r) throws Exception;
 
-    void update(Resume r);
+    void update(Resume r) throws Exception;
 
     Resume get(String uuid);
 
-    void delete(String uuid);
+    void delete(String uuid) throws Exception;
 
     Collection<Resume> getAllSorted();
 

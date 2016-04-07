@@ -72,8 +72,22 @@ public class Resume implements Comparable {
     @Override
     public int compareTo(Object o) {
         Resume other = (Resume) o;
-//        return  true ? -1: 1;
-        // TODO: resolve fullName collision
-        return fullName.compareTo(other.fullName);
+
+        if(other == null) {
+            return 1;
+        }
+        return getUuid().compareTo(other.getUuid());
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 }

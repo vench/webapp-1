@@ -9,4 +9,9 @@ import java.util.List;
 public class Organization {
     private Link homePage;
     private List<Position> positions;
+
+    public Organization(Link homePage, List<Position> positions) {
+        this.homePage = homePage;
+        this.positions = positions;
+    }
 }

@@ -11,4 +11,12 @@ public class Position {
     private Date endDate;
     private String title;
     private String description;
+
+
+    public Position(Date startDate, Date endDate, String title, String description) {
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.title = title;
+        this.description = description;
+    }
 }
