@@ -1,5 +1,6 @@
 package ru.javawebinar.webapp.storage;
 
+import ru.javawebinar.webapp.ResumeException;
 import ru.javawebinar.webapp.model.Resume;
 
 import static java.util.Objects.requireNonNull;
@@ -17,7 +18,7 @@ abstract public class AbstractArrayStorageImpl extends AbstractStorageImpl {
     protected int getExistedIndex(String uuid) {
         int idx = getIndex(uuid);
         if (idx < 0) {
-            throw new IllegalArgumentException("Resume with " + uuid + "not exist");
+            throw new ResumeException(uuid, "Resume with " + uuid + "not exist");
         }
         return idx;
     }
