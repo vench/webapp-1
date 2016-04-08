@@ -14,6 +14,6 @@ public class TextSection extends Section {
 
     @Override
     public String toString() {
-        return "TextSection(" + content + ')';
+        return type + "(" + content + ')';
     }
 }

@@ -1,5 +1,6 @@
 package ru.javawebinar.webapp.model;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -8,10 +9,20 @@ import java.util.List;
  */
 public class OrganizationSection extends Section {
 
-    private List<Organization> organizations;
+    private final List<Organization> organizations;
+
+    public OrganizationSection(SectionType type, Organization... organizations) {
+        this(type, Arrays.asList(organizations));
+    }
 
     public OrganizationSection(SectionType type, List<Organization> organizations) {
         super(type);
         this.organizations = organizations;
     }
+
+    @Override
+    public String toString() {
+        return type + "(" + organizations.toString() + ')';
+    }
+
 }

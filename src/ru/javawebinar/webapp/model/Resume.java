@@ -76,4 +76,8 @@ public class Resume implements Comparable {
         // TODO: resolve fullName collision
         return fullName.compareTo(other.fullName);
     }
+
+    public String getUuid() {
+        return uuid;
+    }
 }

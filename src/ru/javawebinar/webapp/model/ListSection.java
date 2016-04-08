@@ -22,6 +22,6 @@ public class ListSection extends Section {
 
     @Override
     public String toString() {
-        return "ListSection(" + lines.toString() + ')';
+        return type + "(" + lines.toString() + ')';
     }
 }
