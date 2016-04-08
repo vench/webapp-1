@@ -5,10 +5,16 @@
 
 ## Урок 3
 
-### Работа со строками. Массивы.
-  - <a href="http://easy-code.ru/lesson/java-string">Строки в Java</a>. Кодировка.
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 1. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFRkM0SEFMS0s1MGc">Разбор HW2. Enum. equals/hashCode/toString</a>
+- <a href="http://easy-code.ru/lesson/enum-types-java">Enum</a>
+
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFalpNMC1HZ3JvT0U">Работа со строками.</a>
+  - <a href="http://easy-code.ru/lesson/java-string">Строки в Java</a>. Кодировка. <a href="https://ru.wikipedia.org/wiki/UTF-8">UTF-8</a> vs <a href="https://ru.wikipedia.org/wiki/UTF-16">UTF-16</a>
   - <a href="http://easy-code.ru/lesson/manipulating-characters-string-java">Управление строками, функции для работы со строками в Java.</a>
   - <a href="http://java67.blogspot.ru/2014/08/difference-between-string-literal-and-new-String-object-Java.html">String literal pool</a>
+  - <a href="https://dzone.com/articles/changes-stringsubstring-java-7">Changes to String.substring in Java 7</a>
+
+### Массивы.
   - <a href="http://habrahabr.ru/post/132241/">Маленькие хитрости Java</a>: valueOf, StringBuilder vs StringBuffer
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27121">Массивы.</a>
   -  <a href="https://ru.wikipedia.org/wiki/Data_Access_Object">Data Access Object</a>. Интерфейс для хранения резюме.
