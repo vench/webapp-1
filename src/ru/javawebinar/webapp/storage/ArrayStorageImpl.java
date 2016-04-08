@@ -11,18 +11,7 @@ import static java.util.Objects.requireNonNull;
  * GKislin
  * 05.04.2016
  */
-public class ArrayStorageImpl implements Storage {
-    private static final int ARRAY_LIMIT = 1000;
-
-    private Resume[] array = new Resume[ARRAY_LIMIT];
-
-    private int size = 0;
-
-    @Override
-    public void clear() {
-        size = 0;
-        Arrays.fill(array, null); // let gc do his work
-    }
+public class ArrayStorageImpl extends AbstractArrayStorageImpl {
 
     @Override
     public void save(Resume r) {
@@ -40,19 +29,19 @@ public class ArrayStorageImpl implements Storage {
     @Override
     public void update(Resume r) {
         requireNonNull(r);
-        array[getExistIndex(r.getUuid())] = r;
+        array[getExistedIndex(r.getUuid())] = r;
     }
 
     @Override
     public Resume get(String uuid) {
         requireNonNull(uuid);
-        return array[getExistIndex(uuid)];
+        return array[getExistedIndex(uuid)];
     }
 
     @Override
     public void delete(String uuid) {
         requireNonNull(uuid);
-        array[getExistIndex(uuid)] = array[--size];
+        array[getExistedIndex(uuid)] = array[--size];
         array[size] = null; // clear to let GC do its work
     }
 
@@ -68,15 +57,8 @@ public class ArrayStorageImpl implements Storage {
         return size;
     }
 
-    private int getExistIndex(String uuid) {
-        int idx = getIndex(uuid);
-        if (idx == -1) {
-            throw new IllegalArgumentException("Resume with " + uuid + "not exist");
-        }
-        return idx;
-    }
-
-    private int getIndex(String uuid) {
+    @Override
+    protected int getIndex(String uuid) {
         for (int i = 0; i < size; i++) {
             if (array[i].getUuid().equals(uuid)) {
                 return i;
