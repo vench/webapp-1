@@ -18,6 +18,7 @@
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27121">Массивы.</a>
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFcElqUmtpTWtUS28">valueOf, StringBuilder</a>
+  - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27129?page=2">Классы-обертки</a>
   - <a href="http://habrahabr.ru/post/132241/">Маленькие хитрости Java</a>: valueOf, StringBuilder vs StringBuffer
 
 ### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFaU41d0FiSW5XMVk">DAO. Домашнее задание HW03</a>
