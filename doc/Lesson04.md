@@ -7,14 +7,14 @@
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 1. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFWjBuX0RCcDdtaGc">Разбор HW3. Date /LocalDate</a>
 
-### 2. Аннотации
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFR1ZIelJPNXRuaUU">Аннотации. Модульное тестирование</a>
   - <a href="http://easy-code.ru/lesson/java-annotations">Аннотации</a>
-
-### 3. Reflection. Модульное тестирование
-  - <a href="http://www.quizful.net/post/java-reflection-api">Введение в Java Reflection API</a>
   - Модульное тестирование <a href="http://junit.org/">JUnit 4</a>
   - <a href="http://javaxblog.ru/article/java-junit-1/">Java JUnit-1</a>
   - <a href="http://www.javenue.info/post/19">Тестирование с помощью JUnit (Test Case)</a>
+
+### 3. Reflection.
+  - <a href="http://www.quizful.net/post/java-reflection-api">Введение в Java Reflection API</a>
 
 ### 4. Исключения.
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27123?page=5">Исключения (иерархия, throws).</a>
