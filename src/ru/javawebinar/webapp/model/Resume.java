@@ -79,4 +79,8 @@ public class Resume implements Comparable {
     public String getUuid() {
         return uuid;
     }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
 }
