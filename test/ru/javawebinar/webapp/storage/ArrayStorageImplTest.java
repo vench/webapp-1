@@ -14,17 +14,17 @@ public class ArrayStorageImplTest {
 
 /*
     static {
-       storage = new ArrayStorageImpl();
+       storage = new ArrayStorage();
     }
 */
 
     public ArrayStorageImplTest() {
-        storage = new ArrayStorageImpl();
+        storage = new ArrayStorage();
     }
 
     @BeforeClass
     public static void beforeClass() {
-        storage = new ArrayStorageImpl();
+        storage = new ArrayStorage();
         System.out.println("beforeClass");
     }
 

@@ -4,6 +4,7 @@ import ru.javawebinar.webapp.model.Resume;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Comparator;
 
 import static java.util.Objects.requireNonNull;
 
@@ -11,25 +12,25 @@ import static java.util.Objects.requireNonNull;
  * GKislin
  * 05.04.2016
  */
-public class ArrayStorageImpl extends AbstractArrayStorageImpl {
+
+public class SortedArrayStorage extends AbstractArrayStorage {
 
     @Override
     public void save(Resume r) {
         requireNonNull(r, "Resume must not be null");
         int idx = getIndex(r.getUuid());
-        if (idx != -1) {
+        if (idx > 0) {
             throw new IllegalArgumentException("Resume " + r.getUuid() + "already exist");
         }
         if (size == ARRAY_LIMIT) {
             throw new IllegalStateException("Max storage volume " + ARRAY_LIMIT + " is exceeded");
         }
-        array[size++] = r;
-    }
+//      http://codereview.stackexchange.com/questions/36221/binary-search-for-inserting-in-array#answer-36239
 
-    @Override
-    public void update(Resume r) {
-        requireNonNull(r);
-        array[getExistedIndex(r.getUuid())] = r;
+        int insertIdx = -idx - 1;
+        System.arraycopy(array, insertIdx, array, insertIdx + 1, size - insertIdx);
+        array[idx] = r;
+        size++;
     }
 
     @Override
@@ -41,8 +42,12 @@ public class ArrayStorageImpl extends AbstractArrayStorageImpl {
     @Override
     public void delete(String uuid) {
         requireNonNull(uuid);
-        array[getExistedIndex(uuid)] = array[--size];
-        array[size] = null; // clear to let GC do its work
+        int idx = getExistedIndex(uuid);
+        int numMoved = size - idx - 1;
+        if (numMoved > 0) {
+            System.arraycopy(array, idx + 1, array, idx, numMoved);
+        }
+        array[--size] = null; // clear to let GC do its work
     }
 
     @Override
@@ -57,13 +62,13 @@ public class ArrayStorageImpl extends AbstractArrayStorageImpl {
         return size;
     }
 
-    @Override
+
     protected int getIndex(String uuid) {
-        for (int i = 0; i < size; i++) {
-            if (array[i].getUuid().equals(uuid)) {
-                return i;
+        return Arrays.binarySearch(array, 0, size, new Resume(uuid, "", null), new Comparator<Resume>() {
+            @Override
+            public int compare(Resume o1, Resume o2) {
+                return o1.getUuid().compareTo(o2.getUuid());
             }
-        }
-        return -1;
+        });
     }
 }
