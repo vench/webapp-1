@@ -16,6 +16,19 @@ public class Resume implements Comparable {
     private List<Contact> contacts = new ArrayList<>();
     private List<Section> sections = new ArrayList<>();
 
+
+    /**
+     * Вообзе незнаю насколько такая реализация правильная,
+     * Но для тестов нужен клон с таким же ИД
+     * @param resume
+     */
+    public Resume(Resume resume) {
+        this.uuid = resume.uuid;
+        this.fullName = resume.fullName;
+        this.about = resume.about;
+        // TODO: 12.04.16  В теории надо сделать клон списков contacts & sections
+    }
+
     public Resume(String fullName, String about) {
         this(UUID.randomUUID().toString(), fullName, about);
     }
@@ -78,5 +91,22 @@ public class Resume implements Comparable {
 
     public String getUuid() {
         return uuid;
+    }
+
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Resume clone() {
+        return new Resume(this);
     }
 }

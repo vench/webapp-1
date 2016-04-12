@@ -3,6 +3,9 @@ package ru.javawebinar.webapp.storage;
 import ru.javawebinar.webapp.ResumeException;
 import ru.javawebinar.webapp.model.Resume;
 
+import java.util.Arrays;
+import java.util.Collection;
+
 import static java.util.Objects.requireNonNull;
 
 /**
@@ -24,6 +27,8 @@ abstract public class AbstractArrayStorageImpl extends AbstractStorageImpl {
     }
 
     protected abstract int getIndex(String uuid);
+    protected abstract void putToArray(Resume r, int idx);
+    protected abstract void cutToArray(int idx);
 
     @Override
     public void clear() {
@@ -31,12 +36,51 @@ abstract public class AbstractArrayStorageImpl extends AbstractStorageImpl {
             array[i] = null;
         }
         size = 0;
-//        Arrays.fill(array, null); // let gc do his work
     }
+
+    @Override
+    final public void save(Resume r) {
+        requireNonNull(r, "Resume must not be null");
+        int idx = getIndex(r.getUuid());
+        if (idx != -1) {
+            throw new IllegalArgumentException("Resume " + r.getUuid() + "already exist");
+        }
+        if (size == ARRAY_LIMIT) {
+            throw new IllegalStateException("Max storage volume " + ARRAY_LIMIT + " is exceeded");
+        }
+        putToArray(r, idx);
+    }
+
+    @Override
+    final public void delete(String uuid) {
+        requireNonNull(uuid);
+        cutToArray ( getExistedIndex(uuid) );
+    }
+
 
     @Override
     public void update(Resume r) {
         requireNonNull(r);
         array[getExistedIndex(r.getUuid())] = r;
     }
+
+
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public Resume get(String uuid) {
+        requireNonNull(uuid);
+        return array[getExistedIndex(uuid)];
+    }
+
+    @Override
+    public Collection<Resume> getAllSorted() {
+        Resume[] copy = Arrays.copyOf(array, size);
+        Arrays.sort(copy);
+        return Arrays.asList(copy);
+    }
+
 }
