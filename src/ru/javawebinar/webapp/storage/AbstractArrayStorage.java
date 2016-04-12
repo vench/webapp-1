@@ -29,7 +29,7 @@ abstract public class AbstractArrayStorage extends AbstractStorage {
     }
 
     @Override
-    public void clear() {
+    public void doClear() {
         for (int i = 0; i < size; i++) {
             array[i] = null;
         }
