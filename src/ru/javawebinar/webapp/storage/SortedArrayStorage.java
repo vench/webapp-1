@@ -3,7 +3,6 @@ package ru.javawebinar.webapp.storage;
 import ru.javawebinar.webapp.model.Resume;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * GKislin
@@ -29,11 +28,7 @@ public class SortedArrayStorage extends AbstractArrayStorage {
     }
 
     protected int getIndex(String uuid) {
-        return Arrays.binarySearch(array, 0, size, new Resume(uuid, "", null), new Comparator<Resume>() {
-            @Override
-            public int compare(Resume o1, Resume o2) {
-                return o1.getUuid().compareTo(o2.getUuid());
-            }
-        });
+        return Arrays.binarySearch(array, 0, size, new Resume(uuid, "", null),
+                (o1, o2) -> o1.getUuid().compareTo(o2.getUuid()));
     }
 }
