@@ -17,7 +17,7 @@
   - <a href="http://www.quizful.net/post/java-reflection-api">Введение в Java Reflection API</a>
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27123?page=5">Исключения (иерархия, throws).</a>
 
-### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png)  4. Домашнее задание HW04
+### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png)  Домашнее задание HW04
   - Применить паттерн шаблонный метод для разделения  `AbstractStorage` на `ArrayStorage` и `SortedArrayStorage`
   - Реализовать класс `AbstractStorageTest` для тестирование всех реализаций `Storage` и его наследников `ArrayStorageTest`, `SortedArrayStorageTest`.
       - <a href="https://ru.wikipedia.org/wiki/Шаблонный_метод_(шаблон_проектирования)">Шаблонный метод (шаблон проектирования)</a>
