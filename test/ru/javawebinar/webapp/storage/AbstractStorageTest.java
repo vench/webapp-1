@@ -13,6 +13,7 @@ import java.util.List;
 
 import static java.util.Objects.requireNonNull;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 /**
  * GKislin
@@ -58,10 +59,15 @@ public abstract class AbstractStorageTest {
         assertGet(ResumeTestData.R2);
     }
 
-    @Test(expected = ResumeStorageException.class)
+    @Test
     public void testUpdateMissed() throws Exception {
         Resume resume = new Resume("fullName_U1", "location_U1");
-        storage.update(resume);
+        try {
+            storage.update(resume);
+        } catch (Exception e) {
+            return;
+        }
+        fail("Excpected ResumeStorageException");
     }
 
     @Test
