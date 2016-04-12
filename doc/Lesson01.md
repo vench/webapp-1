@@ -11,6 +11,7 @@
 
   - git занести в переменная окружения PATH, перезапустить cmd
   - Клонировать к себе локально наш проект `git clone https://github.com/JavaWebinar/webapp.git`
+  - Перейти в каталог проекта: `cd webapp`
   - `git remote -v`
   - `git remote set-url origin https://github.com/JavaWebinar/webapp.git` - настройка pull
   - `git remote set-url --push origin https://github.com/YouGitHub/YourRepo.git` - настройка push
