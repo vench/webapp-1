@@ -28,5 +28,6 @@
 
 ### ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW5
     Зарефакторить хранение секций и контактов на основе Map.
-    Выделить общий класс AbstractStorage и реализовать подклассы ListStorage и MapStorage (выбор реализации List и Map за вами).
+    Выделить общий класс AbstractStorage и реализовать подклассы ListStorage и MapStorage 
+                                                                 (выбор реализации List и Map за вами).
     Сделать Position внутрениим/вложенным классом. Проверить его созадние через new
