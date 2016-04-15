@@ -1,5 +1,8 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * GKislin
  * 15.04.2016
@@ -23,12 +26,14 @@ public class MainGeneric<T> {
     public static void main(String[] args) {
         new MainGeneric<>("Hello").doSmth();
         MainGeneric<Integer> intIns = new MainGeneric<>(12);
-        MainGeneric<?> objIns = new MainGeneric<Object>(12){
+        MainGeneric<?> objIns = new MainGeneric<Object>(12) {
             @Override
             Object doSmth() {
                 return super.doSmth();
             }
         };
         intIns.doSmth();
+        List<String> list = new ArrayList<>();
+        List l = (List) list;
     }
 }
