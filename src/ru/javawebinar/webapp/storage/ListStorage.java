@@ -5,13 +5,13 @@ import ru.javawebinar.webapp.model.Resume;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListStorage extends AbstractStorage {
+public class ListStorage extends AbstractStorage<Integer> {
 
     private List<Resume> list = new ArrayList<>();
 
     @Override
-    protected boolean exist(Object idx) {
-        return (int) idx >= 0;
+    protected boolean exist(Integer idx) {
+        return idx >= 0;
     }
 
     @Override
@@ -30,23 +30,23 @@ public class ListStorage extends AbstractStorage {
     }
 
     @Override
-    protected void doSave(Resume r, Object idx) {
+    protected void doSave(Resume r, Integer idx) {
         list.add(r);
     }
 
     @Override
-    protected void doUpdate(Resume r, Object idx) {
-        list.set((int) idx, r);
+    protected void doUpdate(Resume r, Integer idx) {
+        list.set(idx, r);
     }
 
     @Override
-    protected Resume doGet(Object idx) {
-        return list.get((int) idx);
+    protected Resume doGet(Integer idx) {
+        return list.get(idx);
     }
 
     @Override
-    protected void doDelete(Object idx) {
-        list.remove((int) idx);
+    protected void doDelete(Integer idx) {
+        list.remove(idx.intValue());
     }
 
     @Override

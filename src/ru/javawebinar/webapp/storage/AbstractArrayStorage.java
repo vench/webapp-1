@@ -10,7 +10,7 @@ import java.util.List;
  * GKislin
  * 08.04.2016
  */
-abstract public class AbstractArrayStorage extends AbstractStorage {
+abstract public class AbstractArrayStorage extends AbstractStorage<Integer> {
     protected static final int ARRAY_LIMIT = 50000;
 
     protected Resume[] array = new Resume[ARRAY_LIMIT];
@@ -21,8 +21,8 @@ abstract public class AbstractArrayStorage extends AbstractStorage {
     protected abstract void insert(Resume r, int idx);
 
     @Override
-    protected boolean exist(Object idx) {
-        return (int) idx >= 0;
+    protected boolean exist(Integer idx) {
+        return idx >= 0;
     }
 
     @Override
@@ -34,27 +34,27 @@ abstract public class AbstractArrayStorage extends AbstractStorage {
     }
 
     @Override
-    protected void doSave(Resume r, Object idx) {
+    protected void doSave(Resume r, Integer idx) {
         if (size == ARRAY_LIMIT) {
             throw new ResumeStorageException(r.getUuid(), "Array size limit(" + ARRAY_LIMIT + ") exceeded");
         }
-        insert(r, (int) idx);
+        insert(r, idx);
         size++;
     }
 
     @Override
-    protected void doUpdate(Resume r, Object idx) {
-        array[(int) idx] = r;
+    protected void doUpdate(Resume r, Integer idx) {
+        array[idx] = r;
     }
 
     @Override
-    protected Resume doGet(Object idx) {
-        return array[(int) idx];
+    protected Resume doGet(Integer idx) {
+        return array[idx];
     }
 
     @Override
-    public void doDelete(Object idx) {
-        shiftDeleted((int) idx);
+    public void doDelete(Integer idx) {
+        shiftDeleted(idx);
         array[size--] = null;
     }
 
