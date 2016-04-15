@@ -5,12 +5,14 @@
 
 ## Урок 6
 
-### 1. Параметризация. Стирание типов.
+### 1. Разбор HW5.
+
+### 2. Параметризация. Стирание типов.
   - <a href="http://developer.alexanderklimov.ru/android/java/generic.php">Обобщения (Generic)</a>
   - <a href="http://www.quizful.net/post/java-generics-tutorial">Дженерики (Java, обучающая статья)</a>
   - <a href="http://docs.oracle.com/javase/tutorial/java/generics/restrictions.html">Ограничения.</a>
   
-### 2. Работа с файлами. Ввод/вывод.
+### 3. Работа с файлами. Ввод/вывод.
   - <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27133">Пакет java.io</a>
   - <a href="http://ru.wikipedia.org/wiki/Декоратор_(шаблон_проектирования)">Паттерн Декоратор</a>.
   - Реализация FileStore (хранение в файлах).
