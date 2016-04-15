@@ -13,7 +13,7 @@
   - <a href="http://appliedjava.wordpress.com/2010/09/23/java-collections-framework/">Коллекции Java (Java Collections Framework)</a>
   - Посмотреть реализацию Map. <a href="http://habrahabr.ru/post/162017/">Проверить себя по статье</a>
 
-### 2. Разбор HW4.
+### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFd1ZUNkNJUkYwZGs">Вопрос про Stack. Разбор HW4.</a>
 
 ### 3. Логгирование
   - Логирование. <a href="http://habrahabr.ru/post/130195/">Настройка логирования</a>
