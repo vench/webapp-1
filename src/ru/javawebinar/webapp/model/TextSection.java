@@ -11,6 +11,9 @@ public class TextSection extends Section {
 
     private String content;
 
+    public TextSection() {
+    }
+
     public TextSection(String content) {
         this.content = content;
     }

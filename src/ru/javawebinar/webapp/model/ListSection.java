@@ -14,6 +14,9 @@ public class ListSection extends Section {
 
     private List<String> lines = new ArrayList<>();
 
+    public ListSection() {
+    }
+
     public ListSection(String... lines) {
         this(Arrays.asList(lines));
     }
