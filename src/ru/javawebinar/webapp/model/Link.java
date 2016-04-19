@@ -1,5 +1,7 @@
 package ru.javawebinar.webapp.model;
 
+import java.util.Objects;
+
 /**
  * GKislin
  * 29.03.2016
@@ -19,7 +21,7 @@ public class Link {
 
     public Link(String name, String url) {
         this.name = name;
-        this.url = url;
+        this.url = url == null ? "" : url;
     }
 
     public String getName() {
@@ -41,5 +43,19 @@ public class Link {
     @Override
     public String toString() {
         return "Link(" + name + ',' + url + ')';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Link link = (Link) o;
+        return Objects.equals(name, link.name) &&
+                Objects.equals(url, link.url);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, url);
     }
 }
