@@ -10,6 +10,8 @@ import java.util.Objects;
  * 01.04.2016
  */
 public class ListSection extends Section {
+    private static final long serialVersionUID = 1L;
+
     private List<String> lines = new ArrayList<>();
 
     public ListSection(String... lines) {

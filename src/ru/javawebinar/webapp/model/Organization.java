@@ -1,5 +1,6 @@
 package ru.javawebinar.webapp.model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.Arrays;
@@ -13,7 +14,9 @@ import static ru.javawebinar.webapp.util.DateUtil.of;
  * GKislin
  * 01.04.2016
  */
-public class Organization {
+public class Organization implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private Link homePage;
     private List<Position> positions;
 
@@ -57,7 +60,9 @@ public class Organization {
      * GKislin
      * 01.04.2016
      */
-    public static class Position {
+    public static class Position implements Serializable {
+        private static final long serialVersionUID = 1L;
+
         private final LocalDate startDate;
         private final LocalDate endDate;
         private String title;

@@ -9,6 +9,7 @@ import java.util.Objects;
  * 01.04.2016
  */
 public class OrganizationSection extends Section {
+    private static final long serialVersionUID = 1L;
 
     private final List<Organization> organizations;
 

@@ -1,5 +1,6 @@
 package ru.javawebinar.webapp.model;
 
+import java.io.Serializable;
 import java.util.EnumMap;
 import java.util.Map;
 import java.util.Objects;
@@ -9,7 +10,9 @@ import java.util.UUID;
  * GKislin
  * 29.03.2016
  */
-public class Resume implements Comparable {
+public class Resume implements Comparable, Serializable {
+    private static final long serialVersionUID = 1L;
+
     private final String uuid;
     private String fullName;
     private String about;
