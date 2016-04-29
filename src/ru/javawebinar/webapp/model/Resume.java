@@ -72,7 +72,8 @@ public class Resume implements Comparable, Serializable {
     }
 
     public String getContact(ContactType type) {
-        return contacts.get(type);
+        String contact = contacts.get(type);
+        return contact == null ? "" : contact;
     }
 
     @Override
