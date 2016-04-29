@@ -18,6 +18,8 @@ import java.util.UUID;
 public class Resume implements Comparable, Serializable {
     private static final long serialVersionUID = 1L;
 
+    public static final Resume EMPTY = new Resume();
+
     public Resume() {
     }
 
