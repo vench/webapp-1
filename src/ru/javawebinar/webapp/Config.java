@@ -1,8 +1,7 @@
 package ru.javawebinar.webapp;
 
-import ru.javawebinar.webapp.storage.FileStorage;
+import ru.javawebinar.webapp.storage.SqlStorage;
 import ru.javawebinar.webapp.storage.Storage;
-import ru.javawebinar.webapp.storage.serializer.XmlStreamSerializer;
 
 import java.io.InputStream;
 import java.util.Properties;
@@ -40,7 +39,13 @@ public class Config {
             appProps.load(webAppIs);
 
             storagePath = appProps.getProperty("storage.dir");
-            storage = new FileStorage(storagePath, new XmlStreamSerializer());
+
+//          storage = new FileStorage(storagePath, new XmlStreamSerializer());
+
+            storage = new SqlStorage(
+                    appProps.getProperty("db.url"),
+                    appProps.getProperty("db.user"),
+                    appProps.getProperty("db.password"));
 
         } catch (Exception e) {
             throw new IllegalStateException(e);
