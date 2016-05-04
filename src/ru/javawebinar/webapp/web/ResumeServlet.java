@@ -1,27 +1,36 @@
 package ru.javawebinar.webapp.web;
 
+import ru.javawebinar.webapp.Config;
 import ru.javawebinar.webapp.model.*;
+import ru.javawebinar.webapp.storage.Storage;
 import ru.javawebinar.webapp.util.HtmlUtil;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static ru.javawebinar.webapp.Config.STORAGE;
-
 /**
  * GKislin
  * 22.04.2016
  */
 public class ResumeServlet extends HttpServlet {
+    private Storage storage;
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        super.init(config);
+        storage = Config.getStorage();
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String uuid = request.getParameter("uuid");
         String action = request.getParameter("action");
         if (action == null) {
-            request.setAttribute("resumeList", STORAGE.getAllSorted());
+            request.setAttribute("resumeList", storage.getAllSorted());
             request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request, response);
             return;
         }
@@ -29,7 +38,7 @@ public class ResumeServlet extends HttpServlet {
         Resume r;
         switch (action) {
             case "delete":
-                STORAGE.delete(uuid);
+                storage.delete(uuid);
                 response.sendRedirect("resume");
                 return;
             case "create":
@@ -37,7 +46,7 @@ public class ResumeServlet extends HttpServlet {
                 break;
             case "view":
             case "edit":
-                r = STORAGE.get(uuid);
+                r = storage.get(uuid);
                 break;
             default:
                 throw new IllegalArgumentException("Action " + action + " is illegal");
@@ -58,7 +67,7 @@ public class ResumeServlet extends HttpServlet {
         if (uuid == null) {
             r = new Resume(name, about);
         } else {
-            r = STORAGE.get(uuid);
+            r = storage.get(uuid);
             r.setFullName(name);
             r.setAbout(about);
         }
@@ -83,9 +92,9 @@ public class ResumeServlet extends HttpServlet {
             }
         }
         if (uuid == null) {
-            STORAGE.save(r);
+            storage.save(r);
         } else {
-            STORAGE.update(r);
+            storage.update(r);
         }
         response.sendRedirect("resume");
     }

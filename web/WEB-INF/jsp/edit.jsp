@@ -2,6 +2,7 @@
 <%@ page import="ru.javawebinar.webapp.model.ListSection" %>
 <%@ page import="ru.javawebinar.webapp.model.SectionType" %>
 <%@ page import="ru.javawebinar.webapp.model.TextSection" %>
+<%@ page import="ru.javawebinar.webapp.util.HtmlUtil" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
