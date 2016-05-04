@@ -46,4 +46,8 @@ public class OrganizationSection extends Section {
     public int hashCode() {
         return Objects.hash(organizations);
     }
+    
+    public void addOrganization(Organization organization) {
+        organizations.add(organization);
+    }
 }

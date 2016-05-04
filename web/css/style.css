@@ -12,3 +12,15 @@ footer {
     padding: 5px 20px;
     margin: 20px 0;
 }
+
+
+.edit-list {
+    
+}
+.edit-list label {
+    width:150px; display: inline-block;
+}
+
+.edit-list li {
+    margin:   2px  0;
+}

@@ -27,7 +27,9 @@
         <c:forEach var="contactEntry" items="${resume.contacts}">
             <jsp:useBean id="contactEntry"
                          type="java.util.Map.Entry<ru.javawebinar.webapp.model.ContactType, java.lang.String>"/>
-                <%=contactEntry.getKey().toHtml(contactEntry.getValue())%><br/>
+            
+            <%=/* =contactEntry.getKey().toHtml("x")  почему то ошибка */
+                contactEntry.getValue().toString() %><br/>
         </c:forEach>
     <p>
     <table cellpadding="8">
