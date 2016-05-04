@@ -1,6 +1,7 @@
 package ru.javawebinar.webapp.web;
 
-import ru.javawebinar.webapp.model.Resume;
+import ru.javawebinar.webapp.model.*;
+import ru.javawebinar.webapp.util.HtmlUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -45,5 +46,47 @@ public class ResumeServlet extends HttpServlet {
         request.getRequestDispatcher(
                 ("view".equals(action) ? "/WEB-INF/jsp/view.jsp" : "/WEB-INF/jsp/edit.jsp")
         ).forward(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        String uuid = request.getParameter("uuid");
+        String name = request.getParameter("name");
+        String about = request.getParameter("about");
+
+        final Resume r;
+        if (uuid == null) {
+            r = new Resume(name, about);
+        } else {
+            r = STORAGE.get(uuid);
+            r.setFullName(name);
+            r.setAbout(about);
+        }
+
+        for (ContactType type : ContactType.values()) {
+            String value = request.getParameter(type.name());
+            if (HtmlUtil.isEmpty(value)) {
+                r.getContacts().remove(type);
+            } else {
+                r.addContact(type, value);
+            }
+        }
+        for (SectionType type : SectionType.values()) {
+            String value = request.getParameter(type.name());
+            if (type == SectionType.EDUCATION || type == SectionType.EXPERIENCE) {
+                continue;
+            }
+            if (HtmlUtil.isEmpty(value)) {
+                r.getSections().remove(type);
+            } else {
+                r.addSection(type, type == SectionType.OBJECTIVE ? new TextSection(value) : new ListSection(value.split("\\n")));
+            }
+        }
+        if (uuid == null) {
+            STORAGE.save(r);
+        } else {
+            STORAGE.update(r);
+        }
+        response.sendRedirect("resume");
     }
 }
