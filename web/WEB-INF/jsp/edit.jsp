@@ -1,19 +1,24 @@
+
 <%@ page import="ru.javawebinar.webapp.model.ListSection" %>
 <%@ page import="ru.javawebinar.webapp.model.OrganizationSection" %>
 <%@ page import="ru.javawebinar.webapp.model.TextSection" %>
 <%@ page import="ru.javawebinar.webapp.model.ContactType" %>
 <%@ page import="ru.javawebinar.webapp.model.SectionType" %>
 
+ 
 <%@ page import="ru.javawebinar.webapp.util.HtmlUtil" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resume.css">
+ 
     <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="js/edit.js"></script>
     <jsp:useBean id="resume" type="ru.javawebinar.webapp.model.Resume" scope="request"/> 
@@ -110,5 +115,7 @@
     </form>
 </section>
 <jsp:include page="/WEB-INF/jsp/fragments/footer.jsp"/>
+
+ 
 </body>
 </html>
