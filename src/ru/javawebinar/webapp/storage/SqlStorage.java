@@ -21,18 +21,14 @@ import java.util.logging.Logger;
 public class SqlStorage implements Storage {
     public final ConnectionFactory connectionFactory;
 
-    public SqlStorage(String dbUrl, String dbUser, String dbPassword) {
-        connectionFactory = new ConnectionFactory() {
-            @Override
-            public Connection getConnection() throws SQLException {
-                try {    
-                    Class.forName("org.postgresql.Driver");
-                } catch (ClassNotFoundException ex) {
-                    Logger.getLogger(SqlStorage.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                return DriverManager.getConnection(dbUrl, dbUser, dbPassword);
+    public SqlStorage(String dbUrl, String dbUser, String dbPassword, String driver) {
+        connectionFactory = () -> {
+            try {
+                Class.forName(driver);
+            } catch (ClassNotFoundException ex) {
+                throw new ResumeStorageException(ex);
             }
-        
+            return DriverManager.getConnection(dbUrl, dbUser, dbPassword);        
         };
     }
 
